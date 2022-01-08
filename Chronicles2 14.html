@@ -55,18 +55,33 @@
     <h4>아사의 치리.&nbsp &nbsp &nbsp &nbsp &nbsp B.C.
         957</h4>
 
-    <input type="button" value="어둘때" onclick="
-    var target = document.querySelector('body');
-        if (this.value === '어둘때'){
-            target.style.backgroundColor='blueviolet';
-            target.style.color='white';
-            this.value = '환할때';
-        } else {
-            target.style.backgroundColor='white';
-            target.style.color='black';
-            this.value = '어둘때';
-        }
-        ">
+        <input type="button" value="어둘때" onclick="
+        var target = document.querySelector('body');
+            if (this.value === '어둘때'){
+                target.style.backgroundColor='blueviolet';
+                target.style.color='white';
+                this.value = '환할때';
+                
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length){
+                    alist[i].style.color = 'brown';
+                    i = i + 1;
+                }
+    
+            } else {
+                target.style.backgroundColor = 'white';
+                target.style.color='black';
+                this.value = '어둘때';
+    
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length){
+                    alist[i].style.color = 'black';
+                    i = i + 1;
+                }
+            }
+            ">
 
     <p>
         14:1 그리하여 아비야가 그의 조상들과 함께 잠드니, 그들이 그를 다윗
