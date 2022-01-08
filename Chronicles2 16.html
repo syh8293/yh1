@@ -52,21 +52,36 @@
 
     <h1>역대기하 16 장</h1>
 
-    <h4>아사가 <b>하나님</b>보다 사람에게 의존함.&nbsp &nbsp
+    <h4>아사가 하나님보다 사람에게 의존함.&nbsp &nbsp
         &nbsp &nbsp &nbsp B.C. 957</h4>
 
-    <input type="button" value="어둘때" onclick="
-    var target = document.querySelector('body');
-        if (this.value === '어둘때'){
-            target.style.backgroundColor='blueviolet';
-            target.style.color='white';
-            this.value = '환할때';
-        } else {
-            target.style.backgroundColor='white';
-            target.style.color='black';
-            this.value = '어둘때';
-        }
-        "></h3>
+        <input type="button" value="어둘때" onclick="
+        var target = document.querySelector('body');
+            if (this.value === '어둘때'){
+                target.style.backgroundColor='gray';
+                target.style.color='white';
+                this.value = '환할때';
+                
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length){
+                    alist[i].style.color = 'brown';
+                    i = i + 1;
+                }
+    
+            } else {
+                target.style.backgroundColor = 'white';
+                target.style.color='black';
+                this.value = '어둘때';
+    
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length){
+                    alist[i].style.color = 'black';
+                    i = i + 1;
+                }
+            }
+            ">
 
     <p>
         16:1 아사의 치리 제삼십육년에, 이스라엘의 바아사왕이 유다를 치러
