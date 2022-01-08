@@ -20,7 +20,7 @@
         }
 
         body {
-            background-color: whitesmoke;
+            background-color: whitesmoke; 
             text-align: justify;
         }
 
@@ -53,8 +53,21 @@
 
     <h1>역대기하 7 장</h1>
 
-    <h4>솔로몬의 기도에 대한 하나님의 응답</h4> B.C. 1004
+    <h4>솔로몬의 기도에 대한 하나님의 응답.&nbsp &nbsp &nbsp &nbsp &nbspB.C. 1004</h4>
 
+    <input type="button" value="어둘때" onclick="
+    var target = document.querySelector('body');
+        if (this.value === '어둘때'){
+            target.style.backgroundColor='blueviolet';
+            target.style.color='white';
+            this.value = '환할때';
+        } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value = '어둘때';
+        }
+        ">
+    
     <p>
         7:1 솔로몬이 기도를 마치자 하늘로부터 불이 내려와 번제물과 제물들을
         사르고 <b>주</b>의 영광이 전을 가득 채우더라.<sup>ㄱ</sup>
