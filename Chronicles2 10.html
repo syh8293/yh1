@@ -57,16 +57,20 @@
 
     <h1>역대기하 10 장</h1>
 
-    <h4>세금으로 왕국이 분열됨</h4>
+    <h4>세금으로 왕국이 분열됨.&nbsp &nbsp &nbsp &nbsp &nbspB.C. 975</h4>
 
-    <input type="button" value="어둘때"
-        onclick="
-        document.querySelector('body').style.backgroundColor='black'
-        document.querySelector('body').style.color='white'">
-    <input type="button" value="환할때"
-        onclick="
-        document.querySelector('body').style.backgroundColor='white'
-        document.querySelector('body').style.color='black'">
+    <input type="button" value="어둘때" onclick="
+    var target = document.querySelector('body');
+        if (this.value === '어둘때'){
+            target.style.backgroundColor='blueviolet';
+            target.style.color='white';
+            this.value = '환할때';
+        } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value = '어둘때';
+        }
+        ">
 
     <p>
         10:1 르호보암이<sup>ㄱ</sup> 세켐으로 갔으니, 이는 온
