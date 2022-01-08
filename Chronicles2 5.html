@@ -53,7 +53,20 @@
 
     <h1>역대기하 5 장</h1>
 
-    <h4>성전 봉헌</h4> B.C.1004
+    <h4>성전 봉헌.&nbsp &nbsp &nbsp &nbsp &nbspB.C. 1004</h4>
+
+    <input type="button" value="어둘때" onclick="
+    var target = document.querySelector('body');
+        if (this.value === '어둘때'){
+            target.style.backgroundColor='blueviolet';
+            target.style.color='white';
+            this.value = '환할때';
+        } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value = '어둘때';
+        }
+        ">
 
     <p>
         5:1 그리하여 솔로몬이 주의 전을 위하여 만드는 모든 일이
