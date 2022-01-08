@@ -34,10 +34,10 @@
 
         #grid ul {
             border-right: 2px solid gray;
-            width: 40px;
+            width: 50px;
             margin: 0;
-            padding-left: 40px;
-            padding-right: 5px;
+            padding-left: 30px;
+            padding-right: 0px;
             padding-top: 25px;
             text-align: left;
         }
@@ -91,13 +91,28 @@
     <input type="button" value="어둘때" onclick="
     var target = document.querySelector('body');
         if (this.value === '어둘때'){
-            target.style.backgroundColor='blueviolet';
+            target.style.backgroundColor='gray';
             target.style.color='white';
             this.value = '환할때';
+            
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+                alist[i].style.color = 'brown';
+                i = i + 1;
+            }
+
         } else {
-            target.style.backgroundColor='white';
+            target.style.backgroundColor = 'white';
             target.style.color='black';
             this.value = '어둘때';
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+                alist[i].style.color = 'black';
+                i = i + 1;
+            }
         }
         ">
     <div id="grid">
