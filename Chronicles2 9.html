@@ -53,7 +53,20 @@
 
     <h1>역대기하 9 장</h1>
 
-    <h4>시바 여왕의 내방</h4> B.C. 992
+    <h4>시바 여왕의 내방.&nbsp &nbsp &nbsp &nbsp &nbspB.C. 992</h4>
+
+    <input type="button" value="어둘때" onclick="
+    var target = document.querySelector('body');
+        if (this.value === '어둘때'){
+            target.style.backgroundColor='blueviolet';
+            target.style.color='white';
+            this.value = '환할때';
+        } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value = '어둘때';
+        }
+        ">
 
     <p>
         9:1 시바 여왕이 솔로몬의 명성을 듣고 어려운 문제들로 솔로몬을 시험하고자
