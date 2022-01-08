@@ -53,16 +53,20 @@
 
     <h1>역대기하 12 장</h1>
 
-    <h4>르호보암이 자기 죄로 인해 벌받음</h4> B.C. 974
+    <h4>르호보암이 자기 죄로 인해 벌받음. &nbsp &nbsp &nbsp &nbsp &nbspB.C. 974</h4>
 
-    <input type="button" value="어둘때"
-        onclick="
-        document.querySelector('body').style.backgroundColor='blueviolet'
-        document.querySelector('body').style.color='white'">
-    <input type="button" value="환할때"
-        onclick="
-        document.querySelector('body').style.backgroundColor='white'
-        document.querySelector('body').style.color='black'">
+    <input type="button" value="어둘때" onclick="
+    var target = document.querySelector('body');
+        if (this.value === '어둘때'){
+            target.style.backgroundColor='blueviolet';
+            target.style.color='white';
+            this.value = '환할때';
+        } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value = '어둘때';
+        }
+        ">
 
     <p>
         12:1 르호보암이 왕국을 견고하게 세우고 스스로 힘을 강하게 하자,
