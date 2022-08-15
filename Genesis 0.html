@@ -7,17 +7,18 @@
     <style media="screen">
         body {
             margin: 1;
-            background-color: whitesmoke;
+            background-color:whitesmoke;
         }
 
         h1 {
             border-bottom: 2px solid gray;
             padding: 20px;
             margin: auto;
-            text-align: center;
+            text-align:center;
         }
 
         h2 {
+            padding-left: 0px;
             text-align: center;
         }
 
@@ -31,87 +32,53 @@
         }
 
         p {
-            text-indent: 0px;
-            font-size: 20;
-            line-height: 2.5;
+            text-indent: 8px;
+            line-height: 1.9;
             text-align: justify;
         }
 
         #grid ul {
             border-right: 2px solid gray;
-            width: 50px;
+            width: 40px;
             margin: 0;
-            padding-left: 30px;
-            padding-right: 0px;
+            padding-left: 60px;
+            padding-right: 5px;
             padding-top: 25px;
             text-align: left;
         }
 
         #grid {
             display: grid;
-            grid-template-columns: 140px 1fr;
+            grid-template-columns: 300px 1fr;
         }
 
         #article {
-            padding-left: 0px;
+            padding-left: 80px;
             margin: 2px;
         }
 
         blockquote {
             font-size: 2;
             color: blue;
-            line-height: 2.5;
+            line-height: 1.9;
             text-align: justify;
         }
 
-        header {
-            position: fixed;
-            top: 0;
-            left: 10;
-            right: 90;
-            color: rgb(245, 51, 51)
+        .column {
+           column-count: 3;
+           text-align:center;
         }
 
         a {
-            text-decoration: none;
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h3>창세기</h3>
-    </header>
-
+    
     <h1>창세기</h1><br>
 
-    <input type="button" value="어둘때" onclick="
-    var target = document.querySelector('body');
-        if (this.value === '어둘때'){
-            target.style.backgroundColor='gray';
-            target.style.color='white';
-            this.value = '환할때';
-            
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i < alist.length){
-                alist[i].style.color = 'brown';
-                i = i + 1;
-            }
-
-        } else {
-            target.style.backgroundColor = 'white';
-            target.style.color='black';
-            this.value = '어둘때';
-
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i < alist.length){
-                alist[i].style.color = 'black';
-                i = i + 1;
-            }
-        }
-        ">
     <div id="grid">
         <div class="column">
             <ul>
@@ -143,127 +110,127 @@
                         target="_blank"><b>9 장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2010.html"
-                        target="_blank"><b>10 장</b></a></li><br>
+                        target="_blank"><b>10장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2011.html"
-                        target="_blank"><b>11 장</b></a></li><br>
+                        target="_blank"><b>11장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2012.html"
-                        target="_blank"><b>12 장</b></a></li><br>
+                        target="_blank"><b>12장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2013.html"
-                        target="_blank"><b>13 장</b></a></li><br>
+                        target="_blank"><b>13장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2014.html"
-                        target="_blank"><b>14 장</b></a></li><br>
+                        target="_blank"><b>14장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2015.html"
-                        target="_blank"><b>15 장</b></a></li><br>
+                        target="_blank"><b>15장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2016.html"
-                        target="_blank"><b>16 장</b></a></li><br>
+                        target="_blank"><b>16장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2017.html"
-                        target="_blank"><b>17 장</b></a></li><br>
+                        target="_blank"><b>17장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2018.html"
-                        target="_blank"><b>18 장</b></a></li><br>
+                        target="_blank"><b>18장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2019.html"
-                        target="_blank"><b>19 장</b></a></li><br>
+                        target="_blank"><b>19장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2020.html"
-                        target="_blank"><b>20 장</b></a></li><br>
+                        target="_blank"><b>20장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2021.html"
-                        target="_blank"><b>21 장</b></a></li><br>
+                        target="_blank"><b>21장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2022.html"
-                        target="_blank"><b>22 장</b></a></li><br>
+                        target="_blank"><b>22장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2023.html"
-                        target="_blank"><b>23 장</b></a></li><br>
+                        target="_blank"><b>23장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2024.html"
-                        target="_blank"><b>24 장</b></a></li><br>
+                        target="_blank"><b>24장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2025.html"
-                        target="_blank"><b>25 장</b></a></li><br>
+                        target="_blank"><b>25장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2026.html"
-                        target="_blank"><b>26 장</b></a></li><br>
+                        target="_blank"><b>26장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2027.html"
-                        target="_blank"><b>27 장</b></a></li><br>
+                        target="_blank"><b>27장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2028.html"
-                        target="_blank"><b>28 장</b></a></li><br>
+                        target="_blank"><b>28장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2029.html"
-                        target="_blank"><b>29 장</b></a></li><br>
+                        target="_blank"><b>29장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2030.html"
-                        target="_blank"><b>30 장</b></a></li> <br>
+                        target="_blank"><b>30장</b></a></li> <br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2031.html"
-                        target="_blank"><b>31 장</b></a></li><br>
+                        target="_blank"><b>31장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2032.html"
-                        target="_blank"><b>32 장</b></a></li><br>
+                        target="_blank"><b>32장</b></a></li><br>
                         
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2033.html"
-                        target="_blank"><b>33 장</b></a></li><br>
+                        target="_blank"><b>33장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2034.html"
-                        target="_blank"><b>34 장</b></a></li><br>
+                        target="_blank"><b>34장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2035.html"
-                        target="_blank"><b>35 장</b></a></li><br>
+                        target="_blank"><b>35장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2036.html"
-                        target="_blank"><b>36 장</b></a></li><br>
+                        target="_blank"><b>36장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2037.html"
-                        target="_blank"><b>37 장</b></a></li><br>
+                        target="_blank"><b>37장</b></a></li><br>
             
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2038.html"
-                        target="_blank"><b>38 장</b></a></li><br>
+                        target="_blank"><b>38장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2039.html"
-                        target="_blank"><b>39 장</b></a></li><br>
+                        target="_blank"><b>39장</b></a></li><br>
 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2040.html"
-                        target="_blank"><b>40 장</b></a></li><br>
+                        target="_blank"><b>40장</b></a></li><br>
                 
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2041.html"
-                            target="_blank"><b>41 장</b></a></li><br>
+                        target="_blank"><b>41장</b></a></li><br>
     
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2042.html"
-                            target="_blank"><b>42 장</b></a></li><br>
+                        target="_blank"><b>42장</b></a></li><br>
     
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2043.html"
-                            target="_blank"><b>43 장</b></a></li><br>
+                        target="_blank"><b>43장</b></a></li><br>
     
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2044.html"
-                            target="_blank"><b>44 장</b></a></li><br>
+                        target="_blank"><b>44장</b></a></li><br>
     
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2045.html"
-                            target="_blank"><b>45 장</b></a></li><br>
+                        target="_blank"><b>45장</b></a></li><br>
     
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2046.html"
-                            target="_blank"><b>46 장</b></a></li><br>
+                        target="_blank"><b>46장</b></a></li><br>
     
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2047.html"
-                            target="_blank"><b>47 장</b></a></li><br>
+                        target="_blank"><b>47장</b></a></li><br>
     
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2048.html"
-                            target="_blank"><b>48 장</b></a></li><br>
+                        target="_blank"><b>48장</b></a></li><br>
     
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2049.html"
-                            target="_blank"><b>49 장</b></a></li><br>
+                        target="_blank"><b>49장</b></a></li><br>
     
                 <li><a href="https://syh8293.github.io/yh1/Genesis%2050.html"
-                            target="_blank"><b>50 장</b></a></li>
+                        target="_blank"><b>50장</b></a></li>
             </ul>
         </div>
         <div id="article">
