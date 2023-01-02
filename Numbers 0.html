@@ -26,15 +26,14 @@
             text-align: center;
         }
 
-        li {
-            line-height: 1.9;
-        }
-
         p {
             text-indent: 0px;
-            font-size: 20;
             line-height: 2.5;
             text-align: justify;
+        }
+
+        li {
+            line-height: 2.5;
         }
 
         #grid ul {
@@ -43,7 +42,7 @@
             margin: 0;
             padding-left: 30px;
             padding-right: 0px;
-            padding-top: 25px;
+            padding-top: 5px;
             text-align: left;
         }
 
@@ -53,7 +52,8 @@
         }
 
         #article {
-            padding-left: 0px;
+            padding-left: 40px;
+            padding-top: 0px;
             margin: 2px;
         }
 
@@ -72,8 +72,13 @@
             color: rgb(245, 51, 51)
         }
 
+        .column {
+            column-count: 2;
+            text-align: justify;
+        }
+
         a {
-            text-decoration: none;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -83,35 +88,7 @@
         <h3>민수기</h3>
     </header>
 
-    <h1>민수기</h1><br>
-
-    <input type="button" value="어둘때" onclick="
-    var target = document.querySelector('body');
-        if (this.value === '어둘때'){
-            target.style.backgroundColor='gray';
-            target.style.color='white';
-            this.value = '환할때';
-            
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i < alist.length){
-                alist[i].style.color = 'brown';
-                i = i + 1;
-            }
-
-        } else {
-            target.style.backgroundColor = 'white';
-            target.style.color='black';
-            this.value = '어둘때';
-
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i < alist.length){
-                alist[i].style.color = 'black';
-                i = i + 1;
-            }
-        }
-        ">
+    <h1>민수기</h1>
     <div id="grid">
         <div class="column">
             <ul>
@@ -227,14 +204,16 @@
         <div id="article">
             <h2>모세의 네 번째 책</h2>
             <p>
-                민수기는 "모세의 네 번째 책" 이라고 불리며, 모세가 이
-                책을 기록했다는 것을 의심할 만한 어떤 이유도 없다. 히브리어
-                성경에서, 민수기는 창세기로부터 34번째 부분에 있다.
+                민수기는 "모세의 네 번째 책" 이라고 불리며, 모세가 이 책을 기록했다는 
+                것을 의심할 만한 어떤 이유도 없다. 히브리어 성경에서, 민수기는 창세기로부터 
+                34번째 부분에 있다.<br>
+
                 민수기는 36장, 1,288절, (영어 &lt킹제임스성경&gt의 경우) 32,896단어로 
-                구성되어 있다. 민수기는 "명부들" 을 다룬다. 이 명부들 가운데 많은
-                것들이 "숫자들"을 담고 있다. 이 숫자들은 이스라엘 지파들과 40년간의 
-                방황하는 광야 생활, 군대 소집, 다양한 제사들, 레위인들의 "도피성읍"을
-                다룬다.
+                구성되어 있다.<br>
+                
+                민수기는 "명부들" 을 다룬다. 이 명부들 가운데 많은 것들이 "숫자들"을 담고 
+                있다. 이 숫자들은 이스라엘 지파들과 40년간의 방황하는 광야 생활, 군대 소집, 
+                다양한 제사들, 레위인들의 "도피성읍"을 다룬다.
             </p>
 
             <p>
@@ -252,8 +231,7 @@
             </p>  
         </div>
     </div>
-
-    <br>
+    <hr>
     <!-- disqus 설치 코드 -->
     <div id="disqus_thread"></div>
     <script>
