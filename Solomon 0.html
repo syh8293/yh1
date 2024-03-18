@@ -4,96 +4,111 @@
 <head>
   <title>솔로몬의 노래</title>
   <meta charset="utf-8">
-  <style media="screen">
-      body {
-        margin: 1;
-        background-color: whitesmoke;
-        }
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <style>
+    body {
+      background-color: whitesmoke;
+      text-align: justify;
+      margin-left: 7px;
+      margin-right: 10px;
+      font-size: large;
+    }
 
-      h1 {
-        border-bottom: 2px solid gray;
-        padding: 20px;
-        margin: auto;
-        text-align: center;
-      }
+    h2 {
+      border-bottom: 2px solid gray;
+      padding: 20px;
+      margin: auto;
+      text-align: center;
+    }
 
-      li {
-              line-height: 2.5;
-              }
+    h4 {
+      text-align: center;
+    }
 
-      p {
-        text-indent: 10px;
-        line-height: 2.5;
-        text-align: justify;
-      }
+    p, ol {
+      line-height: 1.7;
+      text-align: justify;
+    }
 
-      #grid ul {
-        border-right: 2px solid gray;
-        width: 80px;
-        margin: 0;
-        padding-left: 45px;
-        padding-top: 25px;
-      }
+    #grid ul {
+      border-right: 2px solid gray;
+      width: 40px;
+      margin: 0;
+      padding-left: 10px;
+      padding-right: 0px;
+      padding-top: 5px;
+      text-align: left;
+      line-height: 2.5;
+    }
 
-      #grid {
-        display: grid;
-        grid-template-columns: 140px 1fr;
-      }
+    #grid {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+    }
 
-      #article {
-        padding-left: 5px;
-        margin: 2px;
-      }
+    #article {
+      margin-left: -60px;
+      padding-left: 1px;
+      line-height: 2.0;
+    }
 
-      blockquote {
-        font-size: 2;
-        color: blue;
-        line-height: 1.9;
-        text-align: justify;
-      } 
+    header {
+      position: fixed;
+      top: 0;
+      left: 10;
+      right: 90;
+      color: rgb(245, 51, 51)
+    }
 
-      a {
-        text-decoration: underline;
-      }
+    .column {
+      column-count: 1;
+      text-align: justify;
+    }
+
+    a {
+      text-decoration: none;
+    }
   </style>
 </head>
 
 <body>
   
-  <h1>솔로몬의 노래</h1>
+  <h2>솔로몬의 노래</h2>
   <div id="grid">
     <ul>
       <li><a
           href="https://syh8293.github.io/yh1/Solomon%201.html"
-           target="_blank">1 장</a></li><br>
+           target="_blank"><b>1</b></a></li><br>
 
       <li><a
           href="https://syh8293.github.io/yh1/Solomon%202.html"
-           target="_blank">2 장</a></li><br>
+           target="_blank"><b>2</b></a></li><br>
 
       <li><a
           href="https://syh8293.github.io/yh1/Solomon%203.html"
-           target="_blank">3 장</a></li><br>
+           target="_blank"><b>3</b></a></li><br>
 
       <li><a
           href="https://syh8293.github.io/yh1/Solomon%204.html"
-           target="_blank">4 장</a></li><br>
+           target="_blank"><b>4</b></a></li><br>
 
       <li><a
           href="https://syh8293.github.io/yh1/Solomon%205.html"
-           target="_blank">5 장</a></li><br>
+           target="_blank"><b>5</b></a></li><br>
 
       <li><a
           href="https://syh8293.github.io/yh1/Solomon%206.html"
-           target="_blank">6 장</a></li><br>
+           target="_blank"><b>6</b></a></li><br>
 
       <li><a
           href="https://syh8293.github.io/yh1/Solomon%207.html"
-           target="_blank">7 장</a></li><br>
+           target="_blank"><b>7</b></a></li><br>
 
       <li><a
           href="https://syh8293.github.io/yh1/Solomon%208.html"
-           target="_blank">8 장</a></li><br>
+           target="_blank"><b>8</b></a></li><br>
     </ul>
     <div id="article">
 
@@ -104,7 +119,7 @@
         노래가 지금 형태를 갖게 된 것을 솔로몬의 노래 자체가 '암시한다'고
         말하는데, 이 주장은 난센스이다 (<a 
         href="https://syh8293.github.io/yh1/Ecclesiastes%200.html"
-         target="_blank">전도서 서문</a>에서 아람어에 관한 주석 참조).
+        target="_blank">전도서 서문</a>에서 아람어에 관한 주석 참조).
       </p>
 
       <p>
@@ -112,7 +127,7 @@
         히브리어를 말하고 읽고 쓸 수 있는 다른 누군가)은 하나님의 말씀들을
         왜곡시킨 적이 있는 "가장 멍청한 장애꾼들" 가운데 속해 있다. 이것이<a 
         href="https://syh8293.github.io/an12/Jeremiah%2023-36.html" 
-         target="_blank">예레미야 23:36과 시편 107:11, 예레미야 8:8</a>에 
+        target="_blank">예레미야 23:36과 시편 107:11, 예레미야 8:8</a>에 
         기록된 전능하신 하나님의 생각이다.
       </p>
       
@@ -173,32 +188,19 @@
     </div>
   </div>
   <hr>
-  <!-- disqus 설치 코드 -->
-  <div id="disqus_thread"></div>
-  <script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function () { // DON'T EDIT BELOW THIS LINE
-      var d = document,
-        s = d.createElement('script');
-      s.src =
-        'https://https-syh8293-github-io-yh.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +
-        new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the
-    <a href="https://disqus.com/?ref_noscript">comments
-      powered by Disqus.</a></noscript>
-  <!-- disqus  설치 코드 끝 -->
+  
+        <h4>
+
+                <a
+                href="https://syh8293.github.io/yh1/Ecclesiastes%2012.html">&#9664;</a>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                <a
+                href="https://syh8293.github.io/yh/B.html">&#9751;</a>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                <a
+                href="https://syh8293.github.io/yh1/Solomon%201.html">&#9654;</a>
+        </h4>
+
 </body>
 
 </html>
